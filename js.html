@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Example</h1>
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, facilis corrupti. Quibusdam expedita perspiciatis temporibus, pariatur animi sunt excepturi quasi beatae ratione vitae, rem illo ad aliquam exercitationem! Officiis, aliquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, hic dicta, dignissimos sequi delectus vitae dolor, accusantium sapiente odit architecto perspiciatis quae iusto sed! Exercitationem nobis praesentium provident dolor veniam!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur omnis exercitationem fugiat culpa rerum accusamus qui impedit praesentium harum quibusdam, quos eius, tenetur repellendus beatae, officiis reprehenderit pariatur fuga ipsum?</p>
+
+
+    <form action="" name="myForm">
+        <label for=""> First Name</label>
+        <input type="text" name="fname" id="">
+        <label for="">Last Name</label>
+        <input type="text" name="lname" id="" onChange="SubmitName()">
+    </form>
+    <script>
+        //console.log(document.getElementById('para1').align='center')
+        a=document.getElementsByTagName('p')
+        console.log(a[0].innerHTML='safva')
+        for(i=0;i<a.length;i++){
+            a[i].align='center'
+        }
+        
+         //console.log(first_name.action)
+         //last_name=document.forms.myForm.lname
+
+        function SubmitName(){
+            document.forms.myForm.submit()
+        }
+
+
+
+    </script>
+
+</body>
+</html>

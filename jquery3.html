@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div style="height: 200px; width: 300px; background-color: blue;" id="div1">
+
+    </div>
+
+    <button id="animate_height">Animate height</button>
+    <button></button>
+
+    <!-- <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quod impedit in consequatur fugit earum dolore officiis autem dolor expedita. Fugit qui porro architecto sequi magni sapiente sint, aliquid molestiae?</p>
+
+    <br>
+    <button id="btn1">Click</button> -->
+
+    <button style="width: 100%;" id="btn2">Click</button>
+    <div style="width: 100%; height: 300px; background-color: brown;" id="div2"></div>
+    <script>
+        $('#animate_height').click(function(){
+            $('#div1').animate({height:"400px"})
+        })
+
+            // $('#btn1').click(function(){
+            //     $('#para1').hide(2000,function(){
+            //         alert('paragraph is hidden')
+            //     })
+                
+            // })
+
+            $('#btn2').click(function(){
+                $('#div2').css("background-color","blue").slideUp(2000).slideDown(2000)
+            })
+
+    </script>
+    
+
+</body>
+</html>

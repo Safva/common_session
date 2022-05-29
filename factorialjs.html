@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+</head>
+<body>
+    <h2>Find factorial</h2>
+    <label for="">Enter the number to find the factorial</label>
+    <input type="text" name="" id="inputtextfact"><br><br>
+    <label for="">Factorial is</label>
+    <input type="text" name="" id="resultfact"><br><br>
+    <button onclick="FindFactorial()">Click</button>
+    <button onclick="ClearAllData()">Clear</button>
+
+    <script>
+        
+        function FindFactorial(){
+            num1 =Number(document.getElementById('inputtextfact').value)
+            fact = num1
+            i = 1
+            do{
+                num2 = num1-i
+                fact = fact*num2  
+                i++
+            }
+            while(i<num1-1)
+            document.getElementById('resultfact').value = fact
+            console.log("factorial is",fact) 
+        }
+
+        function ClearAllData(){
+            document.getElementById('inputtextfact').value = ''
+            document.getElementById('resultfact').value = ''
+        }
+    </script>
+</body>
+</html>

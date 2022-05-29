@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .asd{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    
+    <p id="para1" style="height: 200px; width: 100%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ab nulla illum dolor, dolorum recusandae, dicta asperiores tempora veniam odio ducimus, rerum est eius. Dolorem blanditiis consequuntur a doloremque optio.</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, optio. Ab repudiandae, nisi laborum doloribus ullam laudantium enim ratione cum quis quos quisquam aliquid tempore eveniet unde eum, beatae natus?</p>
+    <button id="btn1">Click</button>
+    <p id="para2">Hello</p>
+    <script>
+        a=1;
+        //alert($('#para2').html());
+        $('#para2').html("Hello <b>Cybersquare</b>");
+        $('#btn1').click(function(){
+        //    $('p').html(function(a){
+               
+        //     return a;
+        //    })
+
+         
+        $('#para1').addClass('asd')
+        console.log($('#para1').height())
+
+        
+
+        })
+    </script>
+</body>
+</html>

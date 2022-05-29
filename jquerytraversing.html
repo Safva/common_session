@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="div1">
+        <ul>
+            <li>assd</li>
+            <li id="li2">bvcvb
+                <span>span</span>
+            </li>
+            <li>ffgfg</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, totam eveniet ex delectus in sit molestiae illum eius quasi, aspernatur assumenda animi aut numquam dolores veritatis atque. Error, nisi animi!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, neque! Ratione, mollitia! Quae voluptas nihil eaque nostrum tempora ea, deserunt veritatis nulla. Recusandae repellendus maiores tempora, odit eius numquam exercitationem!</p>
+
+    </div>
+    <div>
+        fkafka[ofaf]
+    </div>
+    <div>
+        adsjfaoidfjskalfjsald
+    </div>
+    <button id="btn1">Click</button>
+
+    <script>
+        $('#btn1').click(function(){
+
+            //$('div').last().css("background-color","green")
+            
+            //$('#li2').parent().css({"color": "red", "border": "2px solid red"});
+            //$('#li2').siblings().css("background-color","blue")
+            $('#div1').siblings().css("background-color","blue")
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    
+    
+    <p style="background-color: red;" id="para1">m ipsum dolor sit amet consectetur adipisicing elit. Explicabo impedit voluptas aliquid dolore, voluptates omnis eius nobis optio, adipisci autem laborum rerum ab aliquam doloribus. Aspernatur quod maiores expedita provident.</p>
+    <p style="background-color: green;" id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, itaque! Ducimus, culpa illum repudiandae suscipit ipsa animi veritatis vero dicta! Perspiciatis, at ab rerum natus dignissimos dolor quos cumque eius.</p>
+    <p style="background-color: blue;" id="para3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic consequuntur, accusamus quidem molestias, esse nisi, eligendi dolorum consequatur natus cupiditate nostrum molestiae sint officia vel quis officiis adipisci obcaecati facilis.</p>
+    
+    <button id="slidestop">Stop Slide</button>
+    <div style="height: 500px; width: 100%; background-color: blue; display: none;" id="div1">
+
+    </div>
+    <button style="height: 40px; width: 100%;" id="slidestart">Click</button>
+    
+
+    
+
+    <script>
+        
+
+        $(document).ready(function(){
+            // $('p').click(function(){
+            //     $(this).hide();
+            // })
+
+            $("#slidestart").click(function (){
+        //    alert('hi')
+
+            $("#para1").fadeTo("slow",0.15)
+            $("#para2").fadeTo("slow",0.4)
+            $("#para3").fadeTo("slow",0.7)
+
+            $('#div1').slideToggle(2000)
+            //$('#div1').slideDown()
+
+
+        })
+
+        $('#slidestop').click(function(){
+            $('#div1').stop()
+            //$('#div1').slideUp()
+        })
+
+       
+        
+
+        })
+    </script>
+
+</body>
+</html>

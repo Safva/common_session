@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get" name="form1">
+        <label for="">Username</label>
+        <input type="text" name="user_name" id="_username" onkeydown="Validate()"><br><br>
+        <label for="" id="error_msg1" name="errormsg1"></label>
+        <label for="">Password</label>
+        <input type="password" name="pass_word" id="_password"><br><br>
+        <button type="submit" onclick="return Validate()">Login</button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eum temporibus numquam cupiditate? Quam nobis itaque aspernatur recusandae tempore sunt. Ad rem dolor odio animi cum asperiores in magnam minima!</p>
+        <h1>Hello</h1>
+        <img src="images/1.jpg" alt="">
+        <a href="">Click</a>
+        
+        <script>
+            function Validate(){
+                // var username = document.getElementById('_username');
+                var username = document.forms.form1.user_name;
+                // alert(username);
+                console.log(username);
+                var password = document.getElementById('_password');
+                if(username.value == ""){
+                    username.style.borderColor = "red";
+                    error_msg1.innerHTML = "please enter ur username";
+                    error_msg1.style.color="red";
+                    error_msg1.style.display="block";
+
+                    return false;
+                }
+                else{
+                    username.style.borderColor="black";
+                    error_msg1.style.display="none";
+                    return true;
+                }
+            }
+            
+        </script>
+    </form>
+</body>
+</html>

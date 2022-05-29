@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Enter 1st number</label><br><br>
+    <input type="text" id="num1"><br><br>
+    <label for="">Enter 2nd number</label><br><br>
+    <input type="text" id="num2"><br><br>
+    <button id="btn1" onclick="greater()">Find greater</button><br><br>
+    <label for=" ">The greatest is</label>
+    <input type="text " id="result">
+    <script>
+        function greater() {
+            a = Number(document.getElementById('num1').value)
+            
+   		    b = Number(document.getElementById('num2').value)
+            if (a > b) {
+                console.log(a)
+                document.getElementById("result").value = a;
+            } else {
+                console.log(b)
+                document.getElementById("result").value = b
+            }
+        }
+        </script>
+
+</body>
+</html>

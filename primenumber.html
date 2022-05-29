@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime numbers</title>
+</head>
+<body>
+    <h2>Check a number is prime</h2>
+
+    <label for="">Enter the number to check for prime</label>
+    <input type="text" name="" id="inputtextprime"><br><br>
+    <label for="">The number is :</label>
+    <input type="text" name="" id="inputtextres"><br><br>
+    <button id="btncheck" onclick="CheckForPrime()">Click</button>
+    <button id="btnclear" onclick="ClearAll()">Clear All</button>
+
+    <script>
+        function CheckForPrime(){
+            num1 = Number(document.getElementById('inputtextprime').value)
+            flag = 1
+            for(i=2;i<num1;i++){
+                console.log(num1%i)
+                if(num1%i == 0){
+                    flag =0
+                    break
+                }
+                else{
+                    flag = 1
+                }
+            }
+            console.log(flag)
+            if(flag == 1){
+                document.getElementById('inputtextres').value = 'a prime number'
+            }
+            else if(flag == 0){
+                document.getElementById('inputtextres').value = 'not a prime number'
+            }
+        }
+
+        function ClearAll(){
+            document.getElementById('inputtextprime').value = ''
+            document.getElementById('inputtextres').value = ''
+        }
+        
+
+        
+    </script>
+    
+</body>
+</html>

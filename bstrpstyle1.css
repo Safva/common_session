@@ -1,0 +1,63 @@
+.nav_row{
+    height: 90px;
+    background-color: #4267B2;
+}
+img{
+    height: 100px;
+     width: 100px; 
+
+}   
+.nav_input{  
+    height: 80px;
+    width: 200px;
+}
+
+.second_row{
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+.sign_up_heading{
+    /* text-align: center; */
+    padding-left: 250px;
+}
+
+.fb_icon1{
+    height:80px;
+    width: 50px;
+    
+}
+.fb_lst1{
+    padding: 30px;
+}
+
+.fb_icon2{
+    height:80px;
+    width: 50px;
+    
+}
+.fb_lst2{
+    padding: 20px;
+}
+
+.fb_icon3{
+    height:80px;
+    width: 50px;
+}
+.fb_lst3{
+    padding: 20px;
+}
+
+
+
+.mob,
+ .email,
+ .password
+{
+    width: 500px;
+}
+
+.sign_up{
+    background-image: linear-gradient(to right, #11998e,#38ef7d);
+}
+

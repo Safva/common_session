@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" name="" id="text1" placeholder=""> 
+    <input type="text" name="" id="text2" placeholder="">
+    <input type="text" name="" id="res" placeholder="">
+    <button id="btn1">Click</button>
+    <script>
+        $('#btn1').click(function (){
+            val1 = Number($('#text1').val())
+            // alert(val1)
+            val2 = Number($('#text2').val()) 
+            sum = val1+val2
+            // alert(sum)
+            $('#res').val(sum)
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myForm">
+    <input type="text" name="fname" id="" onkeyup="Checklength()"> 
+    <button name="btn1">Click</button>
+</form>
+    <script>
+        function Checklength(){
+            flength= document.forms.myForm.fname.value
+            if(flength.length<5){
+                
+                document.forms.myForm.btn1.disabled=true
+            }
+            else{
+                console.log('hi')
+                document.forms.myForm.btn1.disabled=false
+            }
+
+        }
+        
+    </script>
+</body>
+</html>
